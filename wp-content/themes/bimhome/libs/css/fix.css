@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap');
+
+footer{
+	background: url('../images/bg_hoa.png') no-repeat;
+	background-size: cover;
+}
+body.nhapho-font{
+	font-family: 'Josefin Sans', sans-serif !important;
+}
+.img-reponsive{
+	max-width: 100%;
+	display: inline !important;
+}
+.img-full{
+	width: 100%;
+}
+.bao-footer{
+	background:rgba(0,0,0,0.5);
+	padding: 40px 0;
+	color: #fff;
+}
+.contact-foot p{
+	
+}
+.contact-foot h4{
+	color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.contact-foot h4 span{
+	color: #BE8F3D;
+}
+.hotline-footer{
+	text-align: right;
+	background: url('../images/hoa-chan.png') no-repeat left;
+}
+.hotline-footer span{
+	position: relative;
+	top: -3px;
+}
+.fanpage h4{
+	color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.fanpage h4 span{
+	color: #BE8F3D;
+}
+.txtfoot{
+	background: none;
+	border: none;
+	border-bottom: 2px solid #707070;
+	color: #fff;
+	width: 100%;
+	padding: 5px 0;
+}
+.txtfoot::placeholder{
+	color: #fff;
+}
+.nutsubmit{
+	text-align: right;
+}
+.btnSubmit{
+	background: #BE8F3D;
+	padding: 10px 20px;
+	color: #fff;
+}
+.btnSubmit:hover{
+	background: #fff;
+	color: #BE8F3D;
+}
+h3.title-news-home{
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+h3.title-news-home a{
+	color: #000;
+}
+.desc-news{
+	padding: 10px 20px;
+}
+.theme-main-title span strong{
+	color: #BE8F3D;
+}
+.client-slider h2 span{
+	color: #BE8F3D;
+}
+.bao-member{
+	background-image: url('../images/bg_hoa.png');
+	background-repeat: no-repeat;
+	background-position: right;
+}
+ul.project-home{
+	text-align: right;
+    position: relative;
+    top: -40px;
+    z-index: 999;
+}
+ul.project-home li{
+	display: inline;
+	padding: 0 10px;
+	cursor: pointer;
+}
+ul.project-home li:hover{
+	color: #BE8F3D;
+}
+.desc-project{
+	text-align: center;
+	padding: 10px 0;
+}
+.desc-project h3{
+	font-size: 16px;
+	padding: 10px 0;
+}
+.desc-project h3 a{
+	color: #BE8F3D;
+}
+.project-item-wrapper{
+	padding-top: 30px;
+}
+ul.breadcrumb-d{
+	text-align: center;
+}
+.pagination-bam{
+	text-align: center;
+}
+ul.paginate{
+    display: inline-flex;
+}
+ul.paginate li{
+	display: inline;
+	padding: 5px;
+}
+ul.paginate li a{
+	padding: 5px 10px;
+	border:1px solid #999;
+	color: #999;
+}
+ul.paginate li a.active{
+	color: #BE8F3D;
+}
+ul.paginate li span{
+	position: relative;
+	top: 5px;
+}
+.content-contact{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+h4.title-lh{
+	font-size: 16px;
+	padding: 20px 0;
+}
+p.dc span{
+	color : #BE8F3D;
+}
+.form-contact-page{
+	padding-top: 70px;
+}
+.txtcontact{
+	width: 100%;
+	border: none;
+	background: none;
+	border-bottom: 1px solid #ccc;
+	padding: 5px 0;
+}
+.pd30{
+	padding: 30px 0;
+}
+.pd50{
+	padding: 50px 0;
+}
+.mgt80{
+	margin-top: 80px;
+}
+
+
+.banner-top{
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.content-banner{
+	text-align: -webkit-center;
+	padding: 200px 0;
+	color: #fff
+}
+.content-banner h1{
+	color: #fff;
+	padding-bottom: 20px;
+}
+.content-banner h4{
+	color: #fff;
+}
+.content-banner p{
+	color: #fff;
+	padding-top: 30px;
+}
+.baobanner{
+	background: rgba(0,0,0,0.5);
+}
+.btn-banner{
+	padding-top: 20px;
+}
+.btn-banner a{
+	margin: 20px;
+	color: #fff;
+}
+.btn-banner a:hover{
+	background: #BE8F3D;
+}
+.list-project{
+	padding-bottom: 20px;
+}
+.quytrinh{
+	background-image: url('../images/bg_hoa_home.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.mota-quytrinh{
+	text-align: center;
+}
+.hoa-van{
+	text-align: center;
+}
+.hoa-van img{
+	display: inline;
+}
+.list-quytrinh{
+	text-align: center;
+	background: #fff;
+	padding: 15px;
+	box-shadow: 0px 10px 10px 0px #ccc;
+	margin-bottom: 40px;
+}
+.list-quytrinh a{
+	color: #707070;
+}
+.list-quytrinh p{
+	font-weight: 400;
+	font-size: 14px;
+}
+.icon-qt{
+	padding-bottom: 10px;
+}
+.list-quytrinh h4{
+	font-size: 20px;
+	padding-bottom: 30px;
+}
+h4.title-bottom span{
+	color: #BE8F3D;
+}
+.btn-tuvan{
+	text-align: center;
+}
+a.btntuvan{
+	padding: 8px 20px;
+	color: #BE8F3D;
+	border: 1px solid #BE8F3D;
+}
+button.btntuvan{
+	padding: 8px 40px;
+	color: #fff;
+	border: 1px solid #BE8F3D;
+	background: #BE8F3D;
+}
+.form-tuvan h5{
+	padding: 20px 0;
+	color: #BE8F3D;
+	font-weight: bold;
+}
+.list-banggia{
+	background-image: url('../images/price-table.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 815px;
+	padding: 37px 0;
+}
+.list-banggia h3{
+	background-image: url('../images/bg_hoa.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	text-align: center;
+	padding: 15px 0;
+}
+.list-banggia h3 span{
+	color: #BE8F3D;
+}
+.list-banggia ul{
+	padding: 20px;
+}
+.list-banggia ul li{
+	background: url('../images/tick.png') no-repeat left;
+	padding-left: 20px;
+	margin-bottom: 10px;
+	padding-top: 5px;
+}
+.cantuvan{
+	position: absolute;
+    bottom: 70px;
+    left: 33%;
+}
+.baoden{
+	background: rgba(0,0,0,0.1);
+}
+.baomau{
+	background: rgba(190,143,61,0.5);
+}
+.btndac{
+	background: #BE8F3D;
+	color: #fff !important;
+}
+.bao-bg-trietly{
+	background-image: url('../images/bg_hoa_home.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.bao-shadow{
+	background: rgba(190,143,61,0.1);
+}
+.bao-shadow-trietly{
+	background: rgba(190,143,61,0.1);
+}
+.desc-trietly{
+	text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #000;
+}
+.desc-trietly h4{
+	padding-bottom: 15px;
+}
+.desc-trietly span{
+	font-style: italic;
+	padding-top: 10px;
+}
+.txtform{
+	border: none;
+    border-radius: 0;
+    padding: 10px;
+    height: 40px;
+}
+
+.nhaphomenu .navbar-nav > li.current-active > a{
+	color: #C5181D !important;
+}
+.nhaphomenu .navbar-nav > li > a{
+	font-weight: bold;
+}
+.nhaphomenu .navbar-nav > li > a:hover{
+	color: #C5181D !important;
+}
+.nhaphomenu .navbar-nav > li:before{
+	background: #C5181D !important;
+}
+
+.nhapho-bn-title span{
+	padding: 15px 0;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.theme-main-np-title {
+  position: relative;
+  z-index: 9;
+  line-height: 90px;
+  padding-left: 70px;
+  padding-bottom: 30px;
+  background: url('../images/hoa-goc-nhapho.png') no-repeat left;
+}
+.theme-main-np-title span{
+	position: relative;
+	top: 60px;
+}
+.theme-main-np-title strong{
+	color: #C5181D;
+}
+.title-project-bt{
+	color: #999;
+}
+.title-project-bt:hover{
+	color: #C5181D;
+}
+.quytrinh-np{
+	background: rgba(48,52,64,0.1);
+}
+.title-bottom-np span{
+	font-weight: 600;
+	color: #C5181D;
+}
+.hoa-van-np{
+	text-align: center;
+	display: inline-flex;
+}
+.hoa-van-np span{
+	width: 100px;
+	height: 2px;
+	background: #C5181D;
+}
+
+a.btntuvan-np{
+	padding: 8px 40px;
+	color: #C5181D;
+	border: 1px solid #C5181D;
+}
+
+.list-banggia-np{
+    border: 1px solid #C5181D;
+    height: 815px;
+}
+.list-banggia-np h3{
+	text-align: center;
+	padding: 15px 0;
+}
+.list-banggia-np h3.bg-den{
+	background: rgba(48,52,64,0.1);
+}
+.list-banggia-np h3.bg-den span{
+	font-weight: bold;
+}
+.list-banggia-np h3.bg-do{
+	background: rgba(197,24,29,0.1);
+}
+.list-banggia-np h3.bg-do span{
+	font-weight: bold;
+	color: #C5181D;
+}
+.list-banggia-np ul{
+	padding: 20px;
+}
+.list-banggia-np ul li {
+    background: url(../images/tickdo.png) no-repeat left;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+}
+.btndac-np{
+	background: #C5181D;
+	color: #fff !important;
+}
+.form-tuvan-tl h5{
+	color: #C5181D;
+	font-weight: bold;
+	padding: 20px 0;
+}
+
+button.btntuvan-tl{
+	padding: 8px 40px;
+	color: #fff;
+	border: 1px solid #C5181D;
+	background: #C5181D;
+}
+
+.img-play{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+}
+.btndangky{
+	background: #C5181D;
+	color: #fff;
+	padding: 10px 30px;
+}
+.btn-dangky{
+	padding: 20px 0;
+}
+.video-iframe iframe{
+	width: 100% !important;
+}
+.img-play{
+	cursor: pointer;
+}
+.title-main-kh{
+	text-align: center;
+	width: 60%;
+	margin: 0 auto;
+}
+.title-main-kh h2{
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #C5181D;
+	font-size: 22px;
+	padding-bottom: 20px;
+}
+.list-gt-khoahoc{
+
+}
+.info-khoahoc{
+	padding-left: 80px;
+}
+.desc-khoahoc{
+	padding-top: 20px;
+}
+.desc-khoahoc h4{
+	font-size: 16px;
+	padding-bottom: 10px;
+}
+.desc-khoahoc h4 a{
+	color: #303440;
+}
+.desc-khoahoc ul{
+	margin: 0;
+}
+.desc-khoahoc ul li{
+	list-style: none;
+	display: inline;
+	padding-left: 20px;
+	background-repeat: no-repeat;
+	background-position: left;
+	color: #BE8F3D;
+}
+.desc-khoahoc ul li.time-kh{
+	background-image: url('../images/iconclock.png');
+}
+.desc-khoahoc ul li.baitap-kh{
+	background-image: url('../images/iconbook.png');
+}
+.desc-khoahoc ul li.user-kh{
+	background-image: url('../images/iconuser.png');
+}
+.btn-border-red{
+	border: 1px solid #C5181D;
+	color: #C5181D;
+	padding: 10px 30px;
+}
+.xemchitiet{
+	color: #C5181D;
+	padding-left: 10px;
+}
+
+.danhsach-khoa .owl-theme .owl-nav{
+	position: absolute;
+    right: 0;
+    top: -70px;
+}
+.giangvien{
+	background-image: url('../images/img_bg_giangvien.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.info-giangvien{
+	color: #fff;
+	padding: 100px 0;
+	width: 50%;
+}
+.info-giangvien h2{
+	color: #fff;
+	padding: 15px 0;
+}
+
+.info-giangvien ul li{
+	background: url('../images/star.png') no-repeat left;
+	padding-left: 20px;
+	padding-top: 7px;
+	margin-top: 10px;
+}
+.btn-bg-white{
+	background: #fff;
+	color: #C5181D;
+	padding: 10px 30px;
+}
+.video-left h3{
+	padding-bottom: 20px;
+}
+ul.list-video{
+	padding-top: 20px;
+}
+ul.list-video li{
+	background: url('../images/iconvd.png') no-repeat left;
+	padding-left: 20px;
+	margin-bottom: 10px;
+	padding-top: 5px;
+}
+ul.list-video li a{
+	color: #666;
+	font-weight: 400;
+}
+.dangky-khoahoc{
+	background-image: url('../images/bg-tuvan.png');
+}
+.mota-title{
+	text-align: center;
+	color: #fff;
+	padding-bottom: 20px;
+}
+.mota-title h4{
+	color: #fff;
+}
+.form-tuvan{
+	color: #fff;
+}
+.form-tuvan p span{
+	font-size: 50px;
+	font-weight: bold;
+	position: relative;
+	top: 10px;
+}
+.bao-tron{
+	border: 2px solid #000;
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	margin: 0 auto;
+}
+.owl-carousel-hv .item{
+	text-align: center;
+}
