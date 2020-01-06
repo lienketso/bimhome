@@ -4,7 +4,10 @@ footer{
 	background: url('../images/bg_hoa.png') no-repeat;
 	background-size: cover;
 }
-body.nhapho-font{
+body.page-template-template-nhapho{
+	font-family: 'Josefin Sans', sans-serif !important;
+}
+body.page-template-template-khoahoc{
 	font-family: 'Josefin Sans', sans-serif !important;
 }
 .img-reponsive{

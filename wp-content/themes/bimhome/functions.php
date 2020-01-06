@@ -172,6 +172,7 @@ add_action( 'wp_enqueue_scripts', 'bimhome_scripts' );
  */
 require get_template_directory() . '/frameworks/codestar/codestar-framework.php';
 require get_template_directory() . '/frameworks/codestar/config/admin.php';
+require get_template_directory() . '/frameworks/codestar/config/bietthu.php';
 /**
  * Walker
  */

@@ -24,7 +24,9 @@
 		<?php wp_head(); ?>
 
 	</head>
-
+	<?php 
+	$options_header = get_option( 'my_framework' );
+ 	?>
 	<body <?php body_class(); ?> >
 		<div class="main-page-wrapper">
 
@@ -32,7 +34,7 @@
 			<div class="theme-main-menu theme-default-menu style-One">
 				<div class="container">
 					<div class="theme-menu-wrapper clear-fix">
-						<a href="index.html" class="float-left logo"><img src="<?= get_template_directory_uri() ?>/libs/images/logo.png" alt="Logo"></a>
+						<a href="<?= get_home_url(); ?>" class="float-left logo"><img src="<?= $options_header['logo_site_head'] ?>" alt="Logo"></a>
 
 						<!-- Menu -->
 						<nav class="navbar float-right">
