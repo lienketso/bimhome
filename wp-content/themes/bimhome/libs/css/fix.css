@@ -611,3 +611,30 @@ ul.list-video li a{
 .owl-carousel-hv .item{
 	text-align: center;
 }
+
+h2.widget-title{
+	font-size: 22px;
+	font-weight: bold;
+	padding-bottom: 20px;
+	background-image: url('../images/hoa-chan.png');
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+.widget ul{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.widget ul li{
+	padding-bottom: 10px;
+}
+.widget ul li a{
+	font-size: 14px;
+	color: #303440;
+	font-weight: 400;
+}
+.widget_categories ul li{
+	background-image: url('../images/nut-chi.png');
+	background-repeat: no-repeat;
+	background-position: left 5px;
+	padding-left: 25px;
+}

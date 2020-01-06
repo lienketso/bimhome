@@ -1,4 +1,6 @@
-
+<?php 
+	$options_footer = get_option( 'my_framework' );
+ ?>
 
 <!-- Footer _____________________________ -->
 <footer>
@@ -9,19 +11,19 @@
 					<div class="contact-foot">
 						<h4>Liên hệ với <span>chúng tôi</span></h4>
 						<div class="hotline-footer"> 
-							<span>Hotline : 0902 698 389</span>
+							<span><?= $options_footer['hotline_site'] ?></span>
 						</div>
-						<p>0979 823 452</p>
-						<p>0979 823 452</p>
-						<p>info@domain.com</p>
+						<p><?= $options_footer['phone_one'] ?></p>
+						<p><?= $options_footer['phone_two'] ?></p>
+						<p><?= $options_footer['email_site'] ?></p>
 						<p style="color: #BE8F3D; font-weight: bold;">Địa chỉ </p>
-						<p>Tòa nhà 88 Tô Vĩnh Diện, Thanh Xuân, Thành phố Hà Nội</p>
+						<p><?= $options_footer['address_site'] ?></p>
 					</div>
 				</div>
 				<div class="col-lg-3">
 					<div class="fanpage">
 						<h4>Kết nối <span>chúng tôi</span></h4>
-						<a href=""><img src="<?= get_template_directory_uri() ?>/libs/images/fb.png" class="img-full" alt="fanpage"></a>
+						<a href="<?= $options_footer['fanpage_site'] ?>"><img src="<?= get_template_directory_uri() ?>/libs/images/fb.png" class="img-full" alt="fanpage"></a>
 					</div>
 				</div>
 				<div class="col-lg-6">

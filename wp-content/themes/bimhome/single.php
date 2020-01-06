@@ -73,9 +73,14 @@
 					</div> <!-- /.row -->
 				</div> <!-- /.read-next-section -->
 
-				</div>
-				</div>
+			</div>
 
-				<?php
+			<div class="theme-sidebar float-left">
+				<?php get_sidebar() ?>
+			</div>
 
-				get_footer();
+		</div>
+
+		<?php
+
+		get_footer();

@@ -10,7 +10,12 @@
 get_header();
 ?>
 <!-- Inner banner ______________________ -->
-<div class="inner-banner">
+<?php 
+$queried_object = get_queried_object();
+$term_id = $queried_object->term_id; 
+$metaS = get_term_meta( $term_id, 'my_category_options', true );
+?>
+<div class="inner-banner" style="background: url(<?= $metaS['tax_background']['url'] ?>);">
 	<div class="opacity">
 		<div class="container">
 			<h4><?= single_term_title(); ?></h4>

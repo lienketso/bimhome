@@ -209,14 +209,19 @@ if (class_exists('CSF')) {
 				'title' => 'Tiêu đề ',
 			),
 			array(
-				'id' => 'contact_map',
-				'type' => 'textarea',
-				'title' => 'Nhúng mã bản đồ'
-			),
-			array(
 				'id' => 'contact_content',
 				'type' => 'wp_editor',
 				'title' => 'Nội dung trang liên hệ',
+			),
+			array(
+				'id' => 'contact_phone',
+				'type' => 'wp_editor',
+				'title' => 'Điện thoại',
+			),
+			array(
+				'id' => 'contact_address',
+				'type' => 'wp_editor',
+				'title' => 'Địa chỉ',
 			),
 		)
 	));
@@ -233,6 +238,16 @@ if (class_exists('CSF')) {
 				'id' => 'logo_site_footer',
 				'type' => 'upload',
 				'title' => 'Logo Chân trang',
+			),
+			array(
+				'id' => 'phone_one',
+				'type' => 'text',
+				'title' => 'Điện thoại 1'
+			),
+			array(
+				'id' => 'phone_two',
+				'type' => 'text',
+				'title' => 'Điện thoại 2'
 			),
 			array(
 				'id' => 'hotline_site',
@@ -315,6 +330,11 @@ if (class_exists('CSF')) {
 	// Create a section
 	CSF::createSection($prefix, array(
 		'fields' => array(
+			array(
+				'id'=>'tax_background',
+				'type'=>'media',
+				'title'=>'Background danh mục'
+			),
 			array(
 				'id' => 'tax_status',
 				'type' => 'select',
