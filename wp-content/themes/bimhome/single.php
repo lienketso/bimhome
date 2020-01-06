@@ -41,8 +41,6 @@
 					<h6>Bài viết liên quan</h6>
 					<div class="row">
 						<div class="read-next-sldierOne">
-							
-
 
 							<?php
 							$categories = get_the_category(get_the_ID());
