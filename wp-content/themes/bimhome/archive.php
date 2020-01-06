@@ -9,45 +9,48 @@
 
 get_header();
 ?>
+<!-- Inner banner ______________________ -->
+<div class="inner-banner">
+	<div class="opacity">
+		<div class="container">
+			<h4><?= single_term_title(); ?></h4>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+			<ul class="breadcrumb-d">
+				<li><a href="<?= get_home_url(); ?>" class="tran3s">Trang chủ</a></li>
+				<li><?= single_term_title(); ?></li>
+			</ul>
+		</div>
+	</div> <!-- /.opacity -->
+</div> <!-- /.inner-banner -->
 
-		<?php if ( have_posts() ) : ?>
+<!-- Blog V3 ___________________________ -->
+<div class="container blog-v4">
 
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+	<div class="theme-large-asidebar float-left">
+		<div class="project-item-wrapper">
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+			<?php if ( have_posts() ) : ?>
+				<?php while ( have_posts() ) : the_post(); ?>
+					<div class="single-project">
+						<?php get_template_part( 'template-parts/content', 'blog' ) ?>
+					</div> <!-- /.single-project -->
+				<?php endwhile; ?>	
+			<?php endif; ?>
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
 
-			endwhile;
+			<div class="pagination-bam">
+				<?php pagination_tdc(); ?>
+			</div>
 
-			the_posts_navigation();
+		</div> <!-- /.project-item-wrapper -->
+	</div> <!-- /theme-large-asidebar -->
 
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	<!-- ====================== Side bar ==================== -->
+	<div class="theme-sidebar float-left">
+		<?php get_sidebar(); ?>
+	</div> <!-- /.theme-sidebar -->
+</div>
 
 <?php
-get_sidebar();
+
 get_footer();

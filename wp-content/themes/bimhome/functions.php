@@ -172,6 +172,10 @@ add_action( 'wp_enqueue_scripts', 'bimhome_scripts' );
  */
 require get_template_directory() . '/frameworks/codestar/codestar-framework.php';
 require get_template_directory() . '/frameworks/codestar/config/admin.php';
+/**
+ * Walker
+ */
+require get_template_directory() . '/frameworks/walker/CleanMenuWalker.php';
 
 /**
  * Implement the Custom Header feature.

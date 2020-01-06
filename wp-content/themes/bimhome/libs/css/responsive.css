@@ -18,7 +18,7 @@
 	}
 }
 @media (max-width: 1410px) and (min-width: 992px) {
-  .theme-main-menu .navbar-nav>li.dropdown-holder:last-child .sub-menu {width: 170px;left:auto;right: 0;}
+  .theme-main-menu .navbar-nav>li.dropdown-holder:last-child .sub-menu {width: 240px;left:auto;right: 0;}
 }
 
 @media (max-width: 1366px) {

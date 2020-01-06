@@ -13,7 +13,7 @@
 	<!-- Main style sheet -->
 
 	<!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
- 	-->
+	-->
 	<!-- Fix Internet Explorer ______________________________________-->
 
 		<!--[if lt IE 9]>
@@ -46,44 +46,61 @@
 							</div>
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="navbar-collapse-1">
+
+								<?php
+								$menu_name = 'menu-1';
+								$locations = get_nav_menu_locations();
+								$menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+								$menuitems = wp_get_nav_menu_items( $menu->term_id, array( 'order' => 'DESC' ) );
+//print_r($menuitems)
+								?>
+
 								<ul class="nav navbar-nav">
-									<li class="dropdown-holder current-active"><a href="#">HOME</a>
-										<ul class="sub-menu">
-											<li><a href="index.html" class="tran3s">Home Version One</a></li>
-											
-										</ul>
-									</li>
-									<li class="dropdown-holder"><a href="#">Projects</a>
-										<ul class="sub-menu">
-											<li><a href="">Project-V01</a></li>
-											
-										</ul>
-									</li>
-									<li class="dropdown-holder"><a href="#">Page</a>
-										<ul class="sub-menu">
-											<li><a href="" >Our Team-V01</a></li>
-										</ul>
-									</li>
-									<li class="dropdown-holder"><a href="#">About us</a>
-										<ul class="sub-menu">
-											<li><a href="" class="tran3s">About Us-V01</a></li>
-											
-										</ul>
-									</li>
-									<li class="dropdown-holder"><a href="#">Blog</a>
-										<ul class="sub-menu">
-											<li><a href="" class="tran3s">Blog-V01</a></li>
-											
-										</ul>
-									</li>
-									<li class="dropdown-holder"><a href="#">Contacts</a>
-										<ul class="sub-menu">
-											<li><a href="" class="tran3s">Contact Us-V01</a></li>
-										</ul>
-									</li>
-								</ul>
-							</div><!-- /.navbar-collapse -->
-						</nav>
-					</div> <!-- /.theme-menu-wrapper -->
-				</div> <!-- /.container -->
+									<?php
+									$count = 0;
+									$submenu = false;
+									foreach( $menuitems as $key => $item ):
+										$link = $item->url;
+										$title = $item->title;
+// item does not have a parent so menu_item_parent equals 0 (false)
+										if ( !$item->menu_item_parent ):
+// save this id for later comparison with sub-menu items
+											$parent_id = $item->ID;
+
+											?>
+
+											<li class="dropdown-holder <?= ($key==0) ? 'current-active' : ''; ?> > ">
+												<a href="<?php echo $link; ?>" class="mainmenu__link">
+													<?php echo $title; ?>
+												</a>
+											<?php endif; ?>
+
+											<?php if ( $parent_id == $item->menu_item_parent ): ?>
+
+												<?php if ( !$submenu ): $submenu = true; ?>
+													<ul class="sub-menu">
+													<?php endif; ?>
+
+													<li class="item">
+														<a href="<?php echo $link; ?>" class="title"><?php echo $title; ?></a>
+													</li>
+
+													<?php if ( $menuitems[ $count + 1 ]->menu_item_parent != $parent_id && $submenu ): ?>
+													</ul>
+													<?php $submenu = false; endif; ?>
+
+												<?php endif; ?>
+
+												<?php if ( $menuitems[ $count + 1 ]->menu_item_parent != $parent_id ): ?>
+												</li>                           
+												<?php $submenu = false; endif; ?>
+
+												<?php $count++; endforeach; ?>
+											</ul>
+
+
+										</div><!-- /.navbar-collapse -->
+									</nav>
+								</div> <!-- /.theme-menu-wrapper -->
+							</div> <!-- /.container -->
 			</div> <!-- /.theme-main-menu -->

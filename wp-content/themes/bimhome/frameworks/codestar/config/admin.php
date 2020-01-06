@@ -374,12 +374,12 @@ if (class_exists('CSF')) {
 if (class_exists('CSF')) {
 	//
 	// Set a unique slug-like ID
-	$prefix = 'my_product_tag';
+	$prefix = 'my_member_post';
 	//
 	// Create a metabox
 	CSF::createMetabox($prefix, array(
-		'title' => 'Tùy chọn hiển thị',
-		'post_type' => 'product',
+		'title' => 'Thông tin khác',
+		'post_type' => 'kien-truc-su',
 	));
 	//
 	// Create a section
@@ -387,16 +387,20 @@ if (class_exists('CSF')) {
 		'fields' => array(
 			// A text field
 			array(
-				'id' => 'product_status',
-				'type' => 'select',
-				'title' => 'Hiện mục giảm giá',
-				'placeholder' => 'Thông tin sản phẩm mục giảm giá',
-				'options' => array(
-					'product_no' => 'Không',
-					'product_yes' => 'Có',
-				),
-				'default' => 'product_yes'
-			)
+				'id' => 'member_fb',
+				'type' => 'text',
+				'title' => 'Faceboox',
+			),
+			array(
+				'id' => 'member_google',
+				'type' => 'text',
+				'title' => 'Google +',
+			),
+			array(
+				'id' => 'member_twitter',
+				'type' => 'text',
+				'title' => 'Twitter',
+			),
 		)
 	));
 
