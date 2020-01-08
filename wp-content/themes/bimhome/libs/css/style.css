@@ -1175,7 +1175,7 @@ footer .main-content-wrapper ul li a:after,.our-team .single-team-member .text u
 .our-team .single-team-member .text {
   display: inline-block;
   position: absolute;
-  bottom: -4px;
+  bottom: 40px;
   right: 30px;
   text-align: right;
 }

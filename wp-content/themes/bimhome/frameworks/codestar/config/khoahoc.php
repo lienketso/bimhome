@@ -137,8 +137,8 @@ if (class_exists('CSF')) {
 			),
 			array(
 				'id'      => 'kh_video_hot_image',
-				'type'    => 'media',
-				'title'   => 'Ảnh đại diện',
+				'type'    => 'text',
+				'title'   => 'Video hot',
 			),
 			array(
 				'id'     => 'list_kh_video',
@@ -232,9 +232,43 @@ CSF::createSection($prefix, array(
 		)
 	)
 );
-
-
-
-
 }//end if
 
+
+//meta box khóa học
+
+//metabox page
+if (class_exists('CSF')) {
+	//
+	// Set a unique slug-like ID
+	$prefix = 'my_khoahoc_post';
+	//
+	// Create a metabox
+	CSF::createMetabox($prefix, array(
+		'title' => 'Thông tin khác',
+		'post_type' => 'khoahoc',
+	));
+	//
+	// Create a section
+	CSF::createSection($prefix, array(
+		'fields' => array(
+			// A text field
+			array(
+				'id' => 'khoahoc_buoi',
+				'type' => 'text',
+				'title' => 'Tổng số buổi học',
+			),
+			array(
+				'id' => 'khoahoc_bai',
+				'type' => 'text',
+				'title' => 'Tổng số bài',
+			),
+			array(
+				'id' => 'khoahoc_nguoi',
+				'type' => 'text',
+				'title' => 'Tổng số người',
+			),
+		)
+	));
+
+}

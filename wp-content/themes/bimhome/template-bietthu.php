@@ -46,6 +46,7 @@ $taxonomy_bt = get_terms([
 		<h2 class="theme-main-title"><span>Các dự án <strong>đã hoàn thiện</strong></span></h2>
 		<div class="row pd30">
 			<?php if(!empty($taxonomy_bt)): ?>
+
 				<?php foreach($taxonomy_bt as $key=>$val): ?>
 					<?php 
 					$query = new WP_Query([
@@ -65,15 +66,20 @@ $taxonomy_bt = get_terms([
 					]);
 					?>
 					<?php while ($query->have_posts()) : $query->the_post() ?>
-					<div class="col-lg-4">
-						<?php get_template_part('template-parts/content', 'project' ); ?>
+						<div class="col-lg-4">
+							<?php get_template_part('template-parts/content', 'project' ); ?>
+						</div>
+					<?php endwhile; ?>
+					<div class="button-xem col-lg-12">
+						<a href="<?= get_term_link($val->term_id,'danh-muc-du-an'); ?>">Xem thêm</a>
+						<a href="#banggia">Xem bảng giá</a>
 					</div>
-				<?php endwhile; ?>
 				<?php endforeach; ?>
 				<?php wp_reset_postdata(); ?>
 			<?php endif; ?>
 
 		</div>
+
 	</div>
 </div>
 

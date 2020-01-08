@@ -69,6 +69,10 @@ $taxonomy_bt = get_terms([
 							<?php get_template_part('template-parts/content', 'project' ); ?>
 						</div>
 					<?php endwhile; ?>
+					<div class="button-xem-np col-lg-12">
+						<a href="<?= get_term_link($val->term_id,'danh-muc-du-an'); ?>">Xem thêm</a>
+						<a href="#banggia">Xem bảng giá</a>
+					</div>
 				<?php endforeach; ?>
 				<?php wp_reset_postdata(); ?>
 			<?php endif; ?>

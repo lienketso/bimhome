@@ -610,11 +610,44 @@ ul.list-video li a{
 	height: 150px;
 	border-radius: 100%;
 	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 .owl-carousel-hv .item{
 	text-align: center;
 }
-
+.video-hot iframe{
+	width: 100%;
+}
+.button-xem{
+	text-align: center;
+	width: 100%;
+}
+.button-xem a{
+	border: 1px solid #C5181D;
+	color: #C5181D;
+	padding: 7px 20px;
+	margin: 30px;
+}
+.button-xem-np{
+	text-align: center;
+	width: 100%;
+}
+.button-xem-np a{
+	border: 1px solid #C5181D;
+	color: #C5181D;
+	padding: 7px 20px;
+	margin: 30px;
+}
+.button-xem-np a:hover{
+	background: #C5181D;
+	color: #fff;
+}
+.button-xem a:hover{
+	background: #BE8F3D;
+	color: #fff;
+}
 h2.widget-title{
 	font-size: 22px;
 	font-weight: bold;

@@ -12,14 +12,17 @@ $i = 0;
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
 					<ol class="carousel-indicators">
+						<?php if(!empty($partner)): ?>
 						<?php foreach($partner as $key=>$part): ?>
 							<?= $i++; ?>
 						<li data-target="#myCarousel" data-slide-to="<?= $key ?>" class="<?= ($i==1) ? 'active' : '' ?>">0<?= $i ?></li>
 						<?php endforeach; ?>
+					<?php endif; ?>
 					</ol>
 
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner" role="listbox">
+						<?php if(!empty($partner)): ?>
 						<?php foreach($partner as $key=>$part): ?>
 							<?php $imgP =  $part['partner_image']['url']; ?>
 						<div class="item <?= ($key==0) ? 'active' : '' ?> clear-fix">
@@ -31,6 +34,7 @@ $i = 0;
 							</div>
 						</div>
 					<?php endforeach; ?>
+				<?php endif; ?>
 					</div>
 				</div>
 			</div> <!-- /.client-slider-wrapper -->
