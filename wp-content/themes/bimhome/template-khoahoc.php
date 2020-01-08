@@ -1,29 +1,30 @@
 <?php /* Template Name: Khóa học */ 
 	get_header();
+	$setting = get_option( 'setting_khoahoc' );
 ?>
 
 
-			<div class="banner-top" style="background-image: url('<?= get_template_directory_uri() ?>/libs/images/banner-khoahoc.png');">
+			<div class="banner-top" style="background-image: url('<?= $setting['khoahoc_banner']['url'] ?>');">
 				<div class="baobanner pd50">
 					<div class="container">
 						<div class="content-banner">
 							<div class="row">
 								<div class="col-lg-6" style="text-align: left;">
 									<h4 class="nhapho-bn-title">
-										<span class="">Autodesk revit thực chiến</span> 
+										<span class=""><?= $setting['khoahoc_banner_title'] ?></span> 
 									</h4>
-									<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed labore et dolore magna.</p>
+									<p><?= $setting['khoahoc_banner_desc'] ?></p>
 									<div class="btn-dangky">
-										<a href="#" class="btndangky">Đăng ký học</a>
+										<a href="#dangkyhoc" class="btndangky">Đăng ký học</a>
 									</div>
 								</div>
 								<div class="col-lg-6">
 									<div class="img-video" id="img-video">
-										<img src="<?= get_template_directory_uri() ?>/libs/images/video-image.png" class="img-full">
+										<img src="<?= $setting['khoahoc_video_image']['url']; ?>" class="img-full">
 										<img class="img-play" id="img-play" onclick="clickvideo()" src="<?= get_template_directory_uri() ?>/libs/images/play.png" >
 									</div>
 									<div class="video-iframe" id="video-iframe">
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/0oo16la3rqw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<?= $setting['khoahoc_banner_video'] ?>
 									</div>
 								</div>
 							</div>
@@ -37,23 +38,21 @@
 				<div class="container">
 
 					<div class="title-main-kh">
-						<h2>Học tập . Sáng tạo . Làm việc</h2>
-						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p>
+						<h2><?= $setting['khss1_main_title'] ?></h2>
+						<p><?= $setting['khss1_main_desc'] ?></p>
 					</div>
 
 					<div class="list-gt-khoahoc pd50">
 						<div class="row">
 							<div class="col-lg-6">
 								<div class="img-khoahoc">
-									<img src="<?= get_template_directory_uri() ?>/libs/images/gtkhoahoc.png" class="img-full">
+									<img src="<?= $setting['khss1_image_1']['url'] ?>" class="img-full">
 								</div>
 							</div>
 							<div class="col-lg-6">
 								<div class="info-khoahoc">
-									<h3>Khóa học dành cho người mới bắt đầu</h3>
-									<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>
-
-									<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>
+									<h3><?= $setting['khss1_title_1'] ?></h3>
+									<?= $setting['khss1_content'] ?>
 								</div>
 							</div>
 						</div>
@@ -64,27 +63,24 @@
 							
 							<div class="col-lg-6">
 								<div class="info-khoahoc">
-									<h3>Ai là người phù hợp khóa học này</h3>
-									<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>
-
-									<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>
+									<h3><?= $setting['khss1_title_2'] ?></h3>
+									<?= $setting['khss1_content_2'] ?>
 									<div class="btn-dangky">
-										<a class="btndangky">Đăng ký học</a>
+										<a href="#dangkyhoc" class="btndangky">Đăng ký học</a>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-6">
 								<div class="img-khoahoc">
-									<img src="<?= get_template_directory_uri() ?>/libs/images/khoahoc2.png" class="img-full">
+									<img src="<?= $setting['khss1_image_2']['url'] ?>" class="img-full">
 								</div>
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
 
-			<div class="khoahoc-chatluong pd50">
+			<div class="khoahoc-chatluong">
 				<div class="container">
 					<p>Chúng tôi có</p>
 					<h3>Những khóa học chất lượng cao</h3>
@@ -184,20 +180,12 @@
 			<div class="giangvien pd50">
 				<div class="container">
 					<div class="info-giangvien">
-					<p>Giảng viên</p>
-					<h2>Khúc Văn Thắng</h2>
-					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita.</p>
-					<ul>
-						<li>The quick, brown fox jumps over a lazy dog. DJs flock by</li>
-						<li>The quick, brown fox jumps over a lazy dog. DJs flock by</li>
-						<li>The quick, brown fox jumps over a lazy dog. DJs flock by</li>
-						<li>The quick, brown fox jumps over a lazy dog. DJs flock by</li>
-						<li>The quick, brown fox jumps over a lazy dog. DJs flock by</li>
-						<li>The quick, brown fox jumps over a lazy dog. DJs flock by</li>
-					</ul>
+					<p><?= $setting['kh_giangvien_title_1'] ?></p>
+					<h2><?= $setting['kh_giangvien_title_2'] ?></h2>
+					<?= $setting['kh_giangvien_content'] ?>
 
 					<div class="btn-dangky">
-						<a href="#" class="btn-bg-white">Giảng viên tư vấn</a>
+						<a href="#dangkyhoc" class="btn-bg-white">Giảng viên tư vấn</a>
 					</div>
 
 					</div>
@@ -207,17 +195,22 @@
 			<div class="video-khoahoc pd50">
 				<div class="container">
 					<div class="row">
+						<?php 
+						$video = $setting['list_kh_video'];
+						 ?>
 						<div class="col-lg-6">
 							<div class="video-left">
-								<p>Video lớp học</p>
-								<h3>Video giới thiệu lớp học</h3>
-								<div class="video-hot">
-									<img src="<?= get_template_directory_uri() ?>/libs/images/video2.png" class="img-full" alt="">
+								<p><?= $setting['kh_video_main_title_1'] ?></p>
+								<h3><?= $setting['kh_video_main_title_2'] ?></h3>
+								<div class="video-hot" id="videohot">
+									<img id="imgHot" src="<?= $setting['kh_video_hot_image']['url'] ?>" class="img-full" alt="">
 								</div>
 								<ul class="list-video">
-									<li><a href="#">Buổi lễ tốt nghiệp lớp Revit thiết kế nhà vườn</a></li>
-									<li><a href="#">Buổi lễ tốt nghiệp lớp Revit thiết kế nhà vườn</a></li>
-									<li><a href="#">Buổi lễ tốt nghiệp lớp Revit thiết kế nhà vườn</a></li>
+									<?php if(!empty($video)): ?>
+										<?php foreach($video as $k=>$v): ?>
+									<li><a class="viewvideo" id="<?= $k ?>" data-content="<?= $v['kh_video_iframe'] ?>" href="javascript:void"><?= $v['kh_video_title']; ?></a></li>
+										<?php endforeach; ?>
+										<?php endif; ?>
 								</ul>
 							</div>
 						</div>

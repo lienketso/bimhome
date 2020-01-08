@@ -7,7 +7,7 @@ if (class_exists('CSF')) {
 	//
 	// Create options
 	CSF::createOptions($prefix, array(
-		'menu_title' => 'Temp biệt thự',
+		'menu_title' => 'Temp landing',
 		'menu_slug' => 'setting-biethu',
 	));
 
@@ -18,22 +18,38 @@ if (class_exists('CSF')) {
 			array(
 				'id' => 'bietthu_banner',
 				'type' => 'media',
-				'title' => 'Ảnh banner',
+				'title' => 'Ảnh banner biệt thự',
 			),
 			array(
 				'id' => 'bietthu_title_1',
 				'type' => 'text',
-				'title' => 'Tiêu đề banner 1',
+				'title' => 'Tiêu đề banner biệt thự 1',
 			),
 			array(
 				'id' => 'bietthu_title_2',
 				'type' => 'text',
-				'title' => 'Tiêu đề banner 2',
+				'title' => 'Tiêu đề banner biệt thự 2',
 			),
 			array(
 				'id' => 'bietthu_desc',
 				'type' => 'textarea',
-				'title' => 'Mô tả banner',
+				'title' => 'Mô tả banner biệt thự',
+			),
+			array(
+				'id' => 'nhapho_banner',
+				'type' => 'media',
+				'title' => 'Ảnh banner nhà phố',
+			),
+			array(
+				'id' => 'nhapho_title_1',
+				'type' => 'text',
+				'title' => 'Tiêu đề banner nhà phố',
+			),
+
+			array(
+				'id' => 'nhapho_desc',
+				'type' => 'textarea',
+				'title' => 'Mô tả banner nhà phố',
 			),
 		)
 	));
@@ -157,3 +173,37 @@ if (class_exists('CSF')) {
 
 
 }//end if
+
+
+
+// Control core classes for avoid errors
+if (class_exists('CSF')) {
+	//
+	// Set a unique slug-like ID
+	$prefix = 'my_taxo_options';
+	//
+	// Create taxonomy options
+	CSF::createTaxonomyOptions($prefix, array(
+		'taxonomy' => 'danh-muc-du-an',
+		'post_type' => 'post',
+		'data_type' => 'serialize', // The type of the database save options. `serialize` or `unserialize`
+	));
+	//
+	// Create a section
+	CSF::createSection($prefix, array(
+		'fields' => array(
+			array(
+				'id' => 'taxo_type',
+				'type' => 'select',
+				'title' => 'Loại danh mục',
+				'placeholder' => 'Loại danh mục',
+				'options' => array(
+					'default' => 'Mặc định',
+					'bietthu' => 'Biệt thự',
+					'nhapho' => 'Nhà phố'
+				),
+				'default' => 'default'
+			),
+		)
+	));
+}

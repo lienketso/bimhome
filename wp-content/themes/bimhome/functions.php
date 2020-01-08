@@ -155,6 +155,7 @@ function bimhome_scripts() {
 
 	wp_enqueue_script( 'theme', get_template_directory_uri() . '/libs/js/theme.js', array(), '20201010', true );
 
+	wp_enqueue_script( 'main', get_template_directory_uri() . '/libs/js/main.js', array(), '20201010', true );
 
 	wp_enqueue_script( 'bimhome-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
@@ -173,6 +174,7 @@ add_action( 'wp_enqueue_scripts', 'bimhome_scripts' );
 require get_template_directory() . '/frameworks/codestar/codestar-framework.php';
 require get_template_directory() . '/frameworks/codestar/config/admin.php';
 require get_template_directory() . '/frameworks/codestar/config/bietthu.php';
+require get_template_directory() . '/frameworks/codestar/config/khoahoc.php';
 /**
  * Walker
  */

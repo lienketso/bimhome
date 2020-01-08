@@ -3,7 +3,7 @@ $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 ?>
 <div class="single-project">
 	<div class="img">
-		<?php the_post_thumbnail( $size = '', ['class' => 'img-responsive'] ) ?>
+		<a href="<?= the_permalink(); ?>"><?php the_post_thumbnail( $size = '', ['class' => 'img-responsive'] ) ?></a>
 		<div class="overlay tran3s">
 			<div>
 				<div>

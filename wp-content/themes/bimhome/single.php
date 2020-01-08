@@ -59,7 +59,7 @@
 										<div class="item">
 											<div class="img">
 												<a href="<?= the_permalink(); ?>" class="related-post__thumb">
-													<?= kinggold_post_thumbnail(); ?>
+													<?= the_post_thumbnail(); ?>
 												</a>
 												<h4><a href="<?= the_permalink(); ?>"><?= the_title(); ?></a></h4>
 											</div>  
