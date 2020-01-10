@@ -51,6 +51,32 @@ if (class_exists('CSF')) {
 				'type' => 'textarea',
 				'title' => 'Mô tả banner nhà phố',
 			),
+			array(
+				'id' => 'landing_gioithieu_title_1',
+				'type' => 'text',
+				'title' => 'Tiêu đề giới thiệu 1',
+			),
+				array(
+				'id' => 'landing_gioithieu_title_2',
+				'type' => 'text',
+				'title' => 'Tiêu đề giới thiệu 2',
+			),
+			array(
+				'id' => 'landing_gioithieu_desc',
+				'type' => 'textarea',
+				'title' => 'Mô tả giới thiệu',
+			),
+			array(
+				'id' => 'landing_gioithieu_content',
+				'type' => 'wp_editor',
+				'title' => 'Nội dung giới thiệu',
+			),
+			array(
+				'id' => 'landing_gioithieu_image',
+				'type' => 'media',
+				'title' => 'Hình ảnh giới thiệu',
+			),
+			
 		)
 	));
 

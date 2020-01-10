@@ -67,12 +67,41 @@
 /*--------- Custom Scroll ---------*/
 @import url("../vendor/jquery.mCustomScrollbar.min.css");
 
-
+.pdt50{
+  padding-top: 50px;
+}
 .logo img{
   max-width: 150px;
 }
 .single-title{
   padding-bottom: 20px;
+}
+.carousel-caption{
+  text-align: -webkit-center;
+}
+.carousel-caption h1{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.carousel-caption h4{
+  color: #fff;
+  font-weight: 400;
+  padding: 20px 0 0 0;
+  font-size: 20px;
+}
+.carousel-caption h4 img{
+  padding: 10px 0;
+  max-width: 350px;
+}
+.carousel-caption h1 span{
+  font-weight: bold;
+}
+.button-slider{
+  padding-top: 30px;
+}
+.button-slider a{
+  margin: 0 20px 0 20px;
 }
 /*==================== Click Top ====================*/
 .scroll-top {
@@ -677,8 +706,10 @@ footer .main-content-wrapper ul li a:after,.our-team .single-team-member .text u
 /*======================= About Arch ===================*/
 .about-arch h5 {
   line-height: 30px;
-  width: 60%;
-  margin: 85px 0 38px 0;
+  width: 50%;
+  margin: 50px 0 38px 0;
+  font-size: 15px;
+  font-weight: bold;
 }
 .about-arch p {
   font-weight: 400;
@@ -686,15 +717,15 @@ footer .main-content-wrapper ul li a:after,.our-team .single-team-member .text u
   margin-bottom: 40px;
 }
 .about-arch .left-side {
-  width: 60.1%;
+  width: 50.1%;
 }
 .about-arch .left-side a {
   margin-left: 15px;
 }
 .about-arch .img {
-  width: 39.9%;
+  width: 49.9%;
   padding: 0 0 0 27px;
-  margin-top: -125px;
+  margin-top: -160px;
 }
 .about-arch .img>div {
   display: inline-block;
@@ -776,7 +807,7 @@ footer .main-content-wrapper ul li a:after,.our-team .single-team-member .text u
 }
 /*===================== Creative Ideas ====================*/
 .creative-ideas {
-  margin: 190px 0 125px 0;
+  margin: 60px 0 70px 0;
 }
 .creative-ideas.fix {
   margin: -90px 0 175px 0;
@@ -809,7 +840,7 @@ footer .main-content-wrapper ul li a:after,.our-team .single-team-member .text u
   padding-left: 80px;
 }
 .creative-ideas .row {
-  margin-top: 60px;
+  margin-top: 25px;
 }
 .creative-ideas .box {
   width: 100%;

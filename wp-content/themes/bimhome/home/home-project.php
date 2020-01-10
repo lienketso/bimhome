@@ -5,7 +5,7 @@ $terms = get_terms( array(
 ) );
 ?>
 
-<div class="">
+<div class="pdt50">
 	<div class="container">
 		<h2 class="theme-main-title"><span>Chúng tôi <strong>đã thiết kế</strong></span></h2>
 

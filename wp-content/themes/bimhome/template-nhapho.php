@@ -38,7 +38,28 @@ $taxonomy_bt = get_terms([
 
 </div>
 
+<div class="about-arch pd50">
+	<div class="container">
+		<h2 class="theme-main-np-title"><span><?= $setting['landing_gioithieu_title_1'];  ?> <strong><?= $setting['landing_gioithieu_title_2'];  ?></strong></span></h2>
+		<h5><?= $setting['landing_gioithieu_desc']; ?></h5>
+		<div class="clear-fix">
+			<div class="left-side float-left">
+				<?= 
+				$setting['landing_gioithieu_content']; 
+				?>
 
+				<br><br>
+				<a href="#banggia" class="theme-button"><span>Xem báo giá</span></a>
+			</div>
+			<div class="img float-right">
+				<div>
+					<img src="<?= $setting['landing_gioithieu_image']['url']; ?>" alt="<?= $setting['landing_gioithieu_title_1'];  ?>">
+					<div class="line-wrapper"><span></span></div>
+				</div>
+			</div> <!-- /.img -->
+		</div>
+	</div> <!-- /.container -->
+</div><!-- landing cac du an -->
 <!-- landing cac du an -->
 <div class="landing-project pd50">
 	<div class="container">

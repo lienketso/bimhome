@@ -2,7 +2,7 @@
 <?php 
 $options = get_option('my_framework');
 ?>
-<div class="about-arch">
+<div class="about-arch pd50">
 	<div class="container">
 		<h2 class="theme-main-title"><span><?= $options['about_title'];  ?> <strong><?= $options['about_title_2'];  ?></strong></span></h2>
 		<h5><?= $options['about_desc']; ?></h5>

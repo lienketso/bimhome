@@ -106,13 +106,26 @@
   #banner .tp-caption h1 {font-size: 88px;}
   
 }
+
+@media (min-width: 1100px){
+  .carousel-caption{
+    bottom: 80px;
+  }
+  .carousel-inner > .item > img{
+    max-height: 658px;
+    width: 100%;
+  }
+}
+
 /*(min-width: 768px) and (max-width: 991px)*/
 
 @media (max-width: 767px) {
-
+  .carousel-caption{
+    display: none;
+  }
   ul.project-home{
     text-align: center !important;
-    top:-20px;
+    top:18px;
   }
   .cantuvan{
     bottom: 120px;
@@ -164,8 +177,8 @@
     display: none;
   }
   .theme-default-menu .navbar-nav > li > a {line-height: 47px;font-size: 16px;padding: 0;}
-  .theme-main-title span {font-size: 84px;top:-9px;}
-  .theme-main-title {font-size: 40px;padding-left: 70px;}
+  .theme-main-title span {font-size: 35px; }
+  .theme-main-title {font-size: 35px; text-align: center; line-height: 50px; padding-left: 0; background: none;}
   .about-arch .left-side,.about-arch .img,.about-arch.style-two .left-side {width: 100%;}
   .about-arch .img,.about-arch.style-two .img {text-align: center;margin-top: 40px; padding: 0 10px 0 0;}
   .about-arch.style-two .left-side a {margin-left: 15px;}
